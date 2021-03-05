@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "MadLib";
+}
+@section typed{
+    <h1 class="im">MVC:  <span class="typed"></span></h1>
+    <p class="typed-items" data-typed-person="MADLIB">
+        USER COMPLETES FORM <span class="im"> | </span>FORM WILL GENERATE MADLIB.
+    </p>
+}
+<h2 class="text-center">A Simple Madlib</h2>
+<form method="get">
+    <div class="madlib-container">
+        <p class="text-center">In his form, we insert user answers to generate a fun MadLib.</p>
+        <h4 class="answer text-center">Please fill out this following form to generate your MadLib!</h4>
+
+        <div class="row">
+            <div class="col-md-2">
+                Country:
+                <input type="text" name="Country" />
+            </div>
+            <div class="col-md-2">
+                Adjective:
+                <input type="text" name="Adjective" />
+            </div>
+            <div class="col-md-2">
+                Animal:
+                <input type="text" name="Animal" />
+            </div>
+
+
+            <div class="col-md-2">
+                Verb:
+                <input type="text" name="Verb" />
+            </div>
+            <div class="col-md-2">
+                Place:
+                <input type="text" name="Place" />
+            </div>
+            <div class="col-md-2">
+                Liquid:
+                <input type="text" name="Liquid" />
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 col-md-offset-3 madlib"><input type="submit" name="Generate" class="btn btn-success" /></div>@*submit button*@
+            <div class="col-md-6 col-md-offset-3 madlib">
+                @Html.ActionLink("Clear", "MadLib", "Home", null, new { @class = "btn btn-danger" })@*clear*@
+            </div>
+        </div>
+    </div>
+</form>
+@if (ViewBag.MadLib != null)
+{
+    <p class="answer text-center">@ViewBag.MadLib</p>
+}

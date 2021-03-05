@@ -13,7 +13,9 @@
 div .credits a, p .credits{
      font-size: 4px;
  }
-
+madlib{
+    align-content:center;
+}
 
 
 /*#endregion Jdh*/
@@ -224,7 +226,7 @@ nav ul li a {
 
 .logo img {
   width: 200px;
-  height: ;
+  
 }
 
 .responsive {
@@ -241,17 +243,23 @@ nav ul li a {
 --------------------------------------------------------------*/
 #hero {
   background: url("../img/mirasbek-nurseit-dYp4_IomzdI-unsplash.jpg") repeat scroll center center/cover;
-  height: 100vh;
+  height: 40em;
   width: 100%;
 }
+.typed-items{
+    background-color: rgba(227, 226, 223, .4);
 
+}
 #hero .hero-content {
   height: 100vh;
   text-align: left;
-  width: 100%;
+  width: auto;
+  height: 600px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-top:5em;
+  
 }
 
 .hero-content h1 {

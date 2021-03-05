@@ -1,106 +1,93 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+@section typed{
+   
+        <h1 class="im">I'm <span class="typed"></span></h1>
+        <p class="typed-items" data-typed-person="Jordan Hickman">a FULL STACK DEVELOPER<span class="im"> | </span>MOTIVATED<span class="im"> | </span>a MUSICIAN<span class="im"> | </span>a KANSAS CITITAN<span class="im"> | </span>a TEAM MATE.</p>
+}
 
-<div id="hero" class="home">
 
+
+<!-- ======= About Section ======= -->
+<div id="about" class="paddsection">
     <div class="container">
-        <div class="hero-content">
-            <h1 class="im">I'm <span class="typed"></span></h1>
-            <p class="typed-items" data-typed-person="Jordan Hickman">a FULL STACK DEVELOPER<span class="im"> | </span>MOTIVATED<span class="im"> | </span>a MUSICIAN<span class="im"> | </span>a KANSAS CITITAN<span class="im"> | </span>a TEAM MATE.</p>
+        <div class="row justify-content-between">
 
-            <ul class="list-unstyled list-social">
-                <li><a href="@Url.Action("Index","Home")" class="smoothScroll">Home</a></li>
-                <li><a href="@Url.Action("Resume","Home")" class="smoothScroll">Resume</a></li>
-                <li><a href="@Url.Action("Portfolio","Home")" class="smoothScroll">Portfolio</a></li>
-                <li><a href="@Url.Action("Classmates","Home")" class="smoothScroll">Classmates</a></li>
-                <li><a href="@Url.Action("Contact","Home")" class="smoothScroll">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</div><!-- End Hero -->
-
-<main id="main">
-
-    <!-- ======= About Section ======= -->
-    <div id="about" class="paddsection">
-        <div class="container">
-            <div class="row justify-content-between">
-
-                <div class="col-lg-4 ">
-                    <div class="div-img-bg">
-                        <div class="about-img">
-                            <img src="~/Content/assets/img/2020-10-06-022929975_2.png" class="img-responsive" alt="me">
-                        </div>
+            <div class="col-lg-4 ">
+                <div class="div-img-bg">
+                    <div class="about-img">
+                        <img src="~/Content/assets/img/2020-10-06-022929975_2.png" class="img-responsive" alt="me">
                     </div>
                 </div>
+            </div>
 
-                <div class="col-lg-7">
-                    <div class="about-descr">
+            <div class="col-lg-7">
+                <div class="about-descr">
 
-                        <p class="p-heading">I am a full stack web developer & freelancer in Kansas City. I love thoughtful & unique web designs as well as helping local buisnesses grow to a fuller potential.   </p>
-                        <p class="separator">A Centriq Training Graduate and career ready. I am a hobbiest musician. I think highly of going to new places and trying new things. Hiking and travel are top activities of mine. My mission is to use my skills to improve & assist buisnesses where it is needed, & to never stop learning. </p>
-
-                    </div>
+                    <p class="p-heading">I am a full stack web developer & freelancer in Kansas City. I love thoughtful & unique web designs as well as helping local buisnesses grow to a fuller potential.   </p>
+                    <p class="separator">A Centriq Training Graduate and career ready. I am a hobbiest musician. I think highly of going to new places and trying new things. Hiking and travel are top activities of mine. My mission is to use my skills to improve & assist buisnesses where it is needed, & to never stop learning. </p>
 
                 </div>
             </div>
         </div>
-    </div><!-- End About Section -->
-    <!-- ======= Services Section ======= -->
-    <div id="services">
-        <div class="container">
+    </div>
+</div><!-- End About Section -->
+<!-- ======= Services Section ======= -->
+<div id="services">
+    <div class="container">
 
-            <div class="services-carousel owl-theme">
+        <div class="services-carousel owl-theme">
 
-                <div class="services-block">
+            <div class="services-block">
 
-                    <i class="ion-ios-browsers-outline"></i>
-                    <span>WEB DEVELOPMENT</span>
-                    <p class="separator">HTML5, CSS3, JavaScript, Repsonsive Design.  </p>
+                <i class="ion-ios-browsers-outline"></i>
+                <span>WEB DEVELOPMENT</span>
+                <p class="separator">HTML5, CSS3, JavaScript, Repsonsive Design.  </p>
 
-                </div>
+            </div>
 
-                <div class="services-block">
+            <div class="services-block">
 
-                    <i class="ion-ios-lightbulb-outline"></i>
-                    <span>TESTING</span>
-                    <p class="separator">Breaking things, debugging and fixing them. </p>
+                <i class="ion-ios-lightbulb-outline"></i>
+                <span>TESTING</span>
+                <p class="separator">Breaking things, debugging and fixing them. </p>
 
-                </div>
+            </div>
 
-                <div class="services-block">
+            <div class="services-block">
 
-                    <i class="ion-ios-color-wand-outline"></i>
-                    <span>GIT HUB</span>
-                    <p class="separator">Backing up work and pushing to repositories. </p>
+                <i class="ion-ios-color-wand-outline"></i>
+                <span>GIT HUB</span>
+                <p class="separator">Backing up work and pushing to repositories. </p>
 
-                </div>
+            </div>
 
-                <div class="services-block">
+            <div class="services-block">
 
-                    <i class="ion-social-android-outline"></i>
-                    <span>MOBILE APPS</span>
-                    <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+                <i class="ion-social-android-outline"></i>
+                <span>MOBILE APPS</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
 
-                </div>
+            </div>
 
-                <div class="services-block">
+            <div class="services-block">
 
-                    <i class="ion-ios-analytics-outline"></i>
-                    <span>BACK END BASICS</span>
-                    <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+                <i class="ion-ios-analytics-outline"></i>
+                <span>BACK END BASICS</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
 
-                </div>
+            </div>
 
-                <div class="services-block">
+            <div class="services-block">
 
-                    <i class="ion-ios-camera-outline"></i>
-                    <span>PHOTOGRAPHY</span>
-                    <p class="separator">A skillset I would love to pick up this year. </p>
-                </div>
+                <i class="ion-ios-camera-outline"></i>
+                <span>PHOTOGRAPHY</span>
+                <p class="separator">A skillset I would love to pick up this year. </p>
             </div>
         </div>
     </div>
-</main>
+</div>
+    }
+
 <!--Then Footer Then Credits-->

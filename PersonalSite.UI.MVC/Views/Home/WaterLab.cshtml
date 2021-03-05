@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "WaterLab";
+}
+@section typed{
+    <h1 class="im">MVC:  <span class="typed"></span></h1>
+    <p class="typed-items" data-typed-person="WATER WEIGHT CONVERSION">
+        USER CAN ENTER AMOUNT OF GALLONS <span class="im"> | </span>FORM WILL CONVERT GALLONS INTO POUNDS.
+    </p>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="text-center">Converting Gallons of Water to it's Weight</h2>
+<form method="get">
+    <div class="watercontainer">
+<p class="text-center">In his form, we will convert the number of gallons a user has into it's weight in pounds.</p>
+<h4 class="answer text-center">Please enter the gallon amount of water you wish to convert into weight.</h4>
+
+<div class="row">
+    <div class="col-md-6">
+        <input type="text" name="gallons" />@*This is where user inputs gals of water*@
+    </div>
+</div>
+<div>
+    <div class="col-md-6 align-items-md-center"><input type="submit" name="Calculate!" class="btn btn-success" /></div>@*submit button*@
+    <div class="col-md-6 align-items-md-center">
+        @Html.ActionLink("Clear", "WaterLab", "Home", null, new { @class = "btn btn-danger" })@*clear*@
+    </div>
+</div>
+    </div>
+</form>
+@if (ViewBag.Answer != null)
+{
+    <h2 class="answer text-center">@ViewBag.Answer</h2>
+}

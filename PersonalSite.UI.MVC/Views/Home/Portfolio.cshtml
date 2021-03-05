@@ -2,82 +2,314 @@
 @{
     ViewBag.Title = "Portfolio";
 }
+@section typed{
+    <h1 class="im">Portfolio <span class="typed"></span></h1>
+    <p class="typed-items" data-typed-person="">PROJECT 1<span class="im"> | </span>PROJECT 2<span class="im"> | </span>PROJECT<span class="im"> | </span>PROJECT 4<span class="im"> | </span>PROJECT 5<span class="im"> | </span>PROJECT 6<span class="im"> | </span>PROJECT 7</p>
+}
+<div class="portfolio">
+    <ul class="portfolio-items">
+        <li class="item">
+            <figure>
+                <div class="view">
+                    <img src="~/Content/assets/img/fedonestudioone.jpg" />
+                </div>
+                <figcaption>
+                    <p><span><a href="http://ibrewlab.jordanhickman.com/index.html">Small Business Project</a></span></p>
+                    <p><span>Custom CSS and HTML strictly.</span></p>
+                </figcaption>
+            </figure>
+        </li>
 
-<div id="hero" class="home">
 
+        <li class="item">
+            <figure>
+                <div class="view">
+                    <img src="~/Content/assets/img/WaterLab.png" />
+                </div>
+                <figcaption>
+                    <p><span><a href="@Url.Action("WaterLab","Home")">Water Weight Conversion Form</a></span></p>
+                    <p><span>Using MVC functionality.</span></p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="item">
+            <figure>
+                <div class="view">
+                    <img src="~/Content/assets/img/madlibslab.png" />
+                </div>
+                <figcaption>
+                    <p><span><a href="@Url.Action("MadLib","Home")">MadLibs Form</a></span></p>
+                    <p><span>Using MVC functionality.</span></p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="item">
+            <figure>
+                <div class="view">
+                    <img src="~/Content/assets/img/TempConvertLab.png" />
+                </div>
+                <figcaption>
+                    <p><span><a href="@Url.Action("TempConverter","Home")">Temperature Conversion Form</a></span></p>
+                    <p><span>Using MVC functionality.</span></p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="item">
+            <figure>
+                <div class="view"> <img src="images/1.jpg" /> </div>
+                <figcaption>
+                    <p><span><a href="#">Description 1</a></span></p>
+                    <p><span>Description 2</span></p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="item">
+            <figure>
+                <div class="view"> <img src="images/1.jpg" /> </div>
+                <figcaption>
+                    <p><span><a href="#">Description 1</a></span></p>
+                    <p><span>Description 2</span></p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="item">
+            <figure>
+                <div class="view"> <img src="images/1.jpg" /> </div>
+                <figcaption>
+                    <p><span><a href="#">Description 1</a></span></p>
+                    <p><span>Description 2</span></p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="item">
+            <figure>
+                <div class="view"> <img src="images/1.jpg" /> </div>
+                <figcaption>
+                    <p><span><a href="#">Description 1</a></span></p>
+                    <p><span>Description 2</span></p>
+                </figcaption>
+            </figure>
+        </li>
+</div>
+
+<div id="services">
     <div class="container">
-        <div class="hero-content">
-            <h1 class="im">Portfolio <span class="typed"></span></h1>
-            <p class="typed-items" data-typed-person="">PROJECT 1<span class="im"> | </span>PROJECT 2<span class="im"> | </span>PROJECT<span class="im"> | </span>PROJECT 4<span class="im"> | </span>PROJECT 5<span class="im"> | </span>PROJECT 6<span class="im"> | </span>PROJECT 7</p>
 
-            <ul class="list-unstyled list-social">
-                <li><a href="@Url.Action("Index","Home")" class="smoothScroll">Home</a></li>
-                <li><a href="@Url.Action("Resume","Home")" smoothScroll">Resume</a></li>
-                <li><a href="@Url.Action("Portfolio","Home")" class="smoothScroll">Portfolio</a></li>
-                <li><a href="@Url.Action("Classmates","Home")" class="smoothScroll">Classmates</a></li>
-                <li><a href="@Url.Action("Contact","Home")" class="smoothScroll">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</div><!-- End Hero -->
-<main id="main">
-    <div id="services">
-        <div class="container">
+        <div class="services-carousel owl-theme">
 
-            <div class="services-carousel owl-theme">
+            <div class="services-block">
 
-                <div class="services-block">
+                <i class="ion-ios-browsers-outline"></i>
+                <span>WEB DEVELOPMENT</span>
+                <p class="separator">HTML5, CSS3, JavaScript, Repsonsive Design.  </p>
 
-                    <i class="ion-ios-browsers-outline"></i>
-                    <span>WEB DEVELOPMENT</span>
-                    <p class="separator">HTML5, CSS3, JavaScript, Repsonsive Design.  </p>
+            </div>
 
-                </div>
+            <div class="services-block">
 
-                <div class="services-block">
+                <i class="ion-ios-lightbulb-outline"></i>
+                <span>TESTING</span>
+                <p class="separator">Breaking things, debugging and fixing them. </p>
 
-                    <i class="ion-ios-lightbulb-outline"></i>
-                    <span>TESTING</span>
-                    <p class="separator">Breaking things, debugging and fixing them. </p>
+            </div>
 
-                </div>
+            <div class="services-block">
 
-                <div class="services-block">
+                <i class="ion-ios-color-wand-outline"></i>
+                <span>GIT HUB</span>
+                <p class="separator">Backing up work and pushing to repositories. </p>
 
-                    <i class="ion-ios-color-wand-outline"></i>
-                    <span>GIT HUB</span>
-                    <p class="separator">Backing up work and pushing to repositories. </p>
+            </div>
 
-                </div>
+            <div class="services-block">
 
-                <div class="services-block">
+                <i class="ion-social-android-outline"></i>
+                <span>MOBILE APPS</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
 
-                    <i class="ion-social-android-outline"></i>
-                    <span>MOBILE APPS</span>
-                    <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+            </div>
 
-                </div>
+            <div class="services-block">
 
-                <div class="services-block">
+                <i class="ion-ios-analytics-outline"></i>
+                <span>BACK END BASICS</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
 
-                    <i class="ion-ios-analytics-outline"></i>
-                    <span>BACK END BASICS</span>
-                    <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+            </div>
 
-                </div>
+            <div class="services-block">
 
-                <div class="services-block">
-
-                    <i class="ion-ios-camera-outline"></i>
-                    <span>PHOTOGRAPHY</span>
-                    <p class="separator">A skillset I would love to pick up this year. </p>
-
-                </div>
+                <i class="ion-ios-camera-outline"></i>
+                <span>PHOTOGRAPHY</span>
+                <p class="separator">A skillset I would love to pick up this year. </p>
 
             </div>
 
         </div>
 
-    </div><!--End Services Section-->
-</main>
+    </div>
+
+</div>
+<!--End Services Section-->
 <!--Then Footer Then Credits-->
+@section scripts{
+    <script>
+
+        //checks if element it is called on is visible (only checks horizontally
+
+        (function ($) {
+
+            var $window = $(window);
+
+
+
+            $.fn.isVisible = function () {
+
+                var $this = $(this),
+
+                    Left = $this.offset().left,
+
+                    visibleWidth = $window.width();
+
+
+
+                return Left < visibleWidth;
+
+            }
+
+        })(jQuery);
+
+
+
+        (function ($) {
+
+            var list = $('.portfolio-items'),
+
+                showVisibleItems = function () {
+
+                    list.children('.item:not(.falldown)').each(function (el, i) {
+
+                        var $this = $(this);
+
+                        if ($this.isVisible()) {
+
+                            $this.addClass('falldown');
+
+                        }
+
+                    });
+
+                };
+
+
+
+            //initially show all visible items before any scroll starts
+
+            showVisibleItems();
+
+
+
+            //then on scroll check for visible items and show them
+
+            list.scroll(function () {
+
+                showVisibleItems();
+
+            });
+
+
+
+            //image hover pan effect
+
+            list.on('mousemove', 'img', function (ev) {
+
+                var $this = $(this),
+
+                    posX = ev.pageX,
+
+                    posY = ev.pageY,
+
+                    data = $this.data('cache');
+
+                //cache necessary variables
+
+                if (!data) {
+
+                    data = {};
+
+                    data.marginTop = - parseInt($this.css('top')),
+
+                        data.marginLeft = - parseInt($this.css('left')),
+
+                        data.parent = $this.parent('.view'),
+
+                        $this.data('cache', data);
+
+                }
+
+
+
+                var originX = data.parent.offset().left,
+
+                    originY = data.parent.offset().top;
+
+
+
+                //move image
+
+                $this.css({
+
+                    'left': -(posX - originX) / data.marginLeft,
+
+                    'top': -(posY - originY) / data.marginTop
+
+                });
+
+            });
+
+
+
+
+
+            list.on('mouseleave', '.item', function (e) {
+
+                $(this).find('img').css({
+
+                    'left': '0',
+
+                    'top': '0'
+
+                });
+
+            });
+
+
+
+            //add mouse wheel support with the jquery.mousewheel plugin
+
+            list.mousewheel(function (event, delta) {
+
+
+
+                this.scrollLeft -= (delta * 60);
+
+
+
+                event.preventDefault();
+
+
+
+            });
+
+
+
+        })(jQuery);
+
+    </script>
+}

@@ -1,27 +1,13 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-
-
-<div id="hero" class="home">
-
-    <div class="container">
-        <div class="hero-content">
+@section typed{
             <h1 class="im">CONTACT <span class="typed"></span></h1>
             <p class="typed-items" data-typed-person="ME.">VIA LINKED IN<span class="im"> | </span>VIA EMAIL.</p>
+    }
+           
 
-            <ul class="list-unstyled list-social">
-                <li><a href="@Url.Action("Index","Home")" class="smoothScroll">Home</a></li>
-                <li><a href="@Url.Action("Resume","Home")" class="smoothScroll">Resume</a></li>
-                <li><a href="@Url.Action("Portfolio","Home")" class="smoothScroll">Portfolio</a></li>
-                <li><a href="@Url.Action("Classmates","Home")" class="smoothScroll">Classmates</a></li>
-                <li><a href="@Url.Action("Contact","Home")" class="smoothScroll">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</div><!-- End Hero -->
 
-<main id="main">
     <!-- ======= Contact Section ======= -->
     <div id="contact" class="paddsection">
         <div class="container">
@@ -94,5 +80,4 @@
             </div>
         </div>
     </div><!-- End Contact Section -->
-</main>
 <!--Then Footer Then Credits-->

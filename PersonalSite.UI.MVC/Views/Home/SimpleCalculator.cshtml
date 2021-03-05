@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "A Simple Calculator";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+@* SO THIS IS THE VIEW, USER WILL SEE THE BELOW. IT CONTAINS THE ANSWER AND ASKS FOR INPUT. *@
+<form method="get">
+    @* Form method *@
+<div class="calcContainer">
+    <h4 class="answer text-center">Please provide 2 values and select the operator that you wish to use</h4>
+    <div class="row">
+        <div class="col-md-4">Value 1: <input type="text" name="Number1" /></div>
+
+
+        <div class="col-md-3">
+            Operator:
+            <select name="Function">
+                <option>Add</option>
+                <option>Subtract</option>
+                <option>Multiply</option>
+                <option>Divide</option>
+            </select>
+        </div>
+
+
+        <div class="col-md-3">Value 2: <input type="text" name="Number2" /></div>
+        <div class="col-md-1"><input type="submit" name="Calculate!" class="btn btn-success" /></div>
+        <div class="col-md-1">
+            @Html.ActionLink("Clear", "Simplecalculator", "Home", null, new { @class = "btn btn-danger" })
+        </div>
+    </div>
+</div>
+</form>
+@if (ViewBag.Answer != null)
+{
+    <h2 class="answer text-center">@ViewBag.Answer</h2>
+}

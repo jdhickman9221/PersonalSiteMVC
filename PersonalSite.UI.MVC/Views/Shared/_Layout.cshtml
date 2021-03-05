@@ -14,6 +14,8 @@
     @* keywords check *@
     <meta name="author" content="Jordan Douglas Hickman" />
     @* author check *@
+
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="~/Content/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="~/Content/assets/img/favicon-32x32.png">
@@ -37,6 +39,7 @@
     <!-- Template Main CSS File -->
     <link href="~/Content/assets/css/style.css" rel="stylesheet">
     <link href="~/Content/assets/css/resume.css" rel="stylesheet">
+    <link href="~/Content/assets/css/portfolio.css" rel="stylesheet">
 
 
     <!-- =======================================================
@@ -72,32 +75,32 @@
         </div>
     </nav><!-- End Navbar -->
     <!-- ======= Hero Section ======= -->
-    @RenderBody()
 
 
-    @*<div id="hero" class="home">
+
+    <div id="hero" class="home">
 
         <div class="container">
             <div class="hero-content">
-                <h1 class="im">I'm <span class="typed"></span></h1>
-                <p class="typed-items" data-typed-person="Jordan Hickman">a FULL STACK DEVELOPER<span class="im"> | </span>MOTIVATED<span class="im"> | </span>a MUSICIAN<span class="im"> | </span>a KANSAS CITITAN<span class="im"> | </span>a TEAM MATE.</p>*@
+                @*<h1 class="im">I'm <span class="typed"></span></h1>
+                    <p class="typed-items" data-typed-person="Jordan Hickman">a FULL STACK DEVELOPER<span class="im"> | </span>MOTIVATED<span class="im"> | </span>a MUSICIAN<span class="im"> | </span>a KANSAS CITITAN<span class="im"> | </span>a TEAM MATE.</p>*@
 
-    @*<ul class="list-unstyled list-social">
+                @RenderSection("typed")
+
+                <ul class="list-unstyled list-social">
                     <li><a href="@Url.Action("Index","Home")" class="smoothScroll">Home</a></li>
-                    <li><a href="@Url.Action("Resume","Home")"smoothScroll">Resume</a></li>
+                    <li><a href="@Url.Action("Resume","Home")" smoothScroll">Resume</a></li>
                     <li><a href="@Url.Action("Portfolio","Home")" class="smoothScroll">Portfolio</a></li>
                     <li><a href="@Url.Action("Classmates","Home")" class="smoothScroll">Classmates</a></li>
                     <li><a href="@Url.Action("Contact","Home")" class="smoothScroll">Contact</a></li>
                 </ul>
             </div>
-        </div>*@
-    @*</div>*@
+        </div>
+    </div>
     <!-- End Hero -->
 
     <main id="main">
-
-
-
+        @RenderBody()
     </main>
     <!-- ======= Footer ======= -->
     <div id="footer" class="text-center">
@@ -146,8 +149,9 @@
     <script src="~/Content/assets/js/helper.js"></script>
     <script src="~/Content/assets/js/grid3d.js"></script>
     <script src="~/Content/assets/js/classie.js"></script>
+    <script src="~/Content/assets/js/jquery.mousewheel.js"></script>
 
-  
+
     @RenderSection("scripts", false)
     <script>
         //Highlight Selected navigation
@@ -160,6 +164,7 @@
         });
 
     </script>
+    
 </body>
 
 </html>

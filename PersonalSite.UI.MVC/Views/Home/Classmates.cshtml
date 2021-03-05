@@ -2,27 +2,12 @@
 @{
     ViewBag.Title = "Classmates";
 }
-
-<!-- ======= Hero Section ======= -->
-<div id="hero" class="home">
-
-    <div class="container">
-        <div class="hero-content">
+@section typed{
             <h1 class="im">My <span class="typed"></span></h1>
             <p class="typed-items" data-typed-person="CLASSMATES">DEAR COLLEAGUES<span class="im"> | </span>AMAZING COMMRADES<span class="im"> | </span>FELLOW ASSASSOCIATES</p>
+    }
 
-            <ul class="list-unstyled list-social">
-                <li><a href="@Url.Action("Index","Home")" class="smoothScroll">Home</a></li>
-                <li><a href="@Url.Action("Resume","Home")" class="smoothScroll">Resume</a></li>
-                <li><a href="@Url.Action("Portfolio","Home")" class="smoothScroll">Portfolio</a></li>
-                <li><a href="@Url.Action("Classmates","Home")" class="smoothScroll">Classmates</a></li>
-                <li><a href="@Url.Action("Contact","Home")" class="smoothScroll">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</div><!-- End Hero -->
 
-<main id="main">
 
     <!-- ======= About Section ======= -->
     <div id="about" class="paddsection">
@@ -108,5 +93,5 @@
         </div>
 
     </div><!-- End Services Section -->
-</main>
+
 

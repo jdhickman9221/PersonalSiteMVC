@@ -2,27 +2,10 @@
 @{
     ViewBag.Title = "Resume";
 }
-
-<div id="hero" class="home">
-
-    <div class="container">
-        <div class="hero-content">
+@section typed{
             <h1 class="im">I HAVE  <span class="typed"></span></h1>
-            <p class="typed-items" data-typed-person="GRADUATED CENTRIQ TRAINING">BEEN A COFFEE ROASTER <span class="im"> | </span> 4 YEARS, BEEN A TEAM MANAGER <span class="im"> | </span> 7 YEARS, BEEN A BARISTA TRAINER<span class="im"> | </span> 7 YEARS, LED ROADS TO SUCCUSS.</p>
-
-            <ul class="list-unstyled list-social">
-                <li><a href="@Url.Action("Index","Home")" class="smoothScroll">Home</a></li>
-                <li><a href="@Url.Action("Resume","Home")" class="smoothScroll">Resume</a></li>
-                <li><a href="@Url.Action("Portfolio","Home")" class="smoothScroll">Portfolio</a></li>
-                <li><a href="@Url.Action("Classmates","Home")" class="smoothScroll">Classmates</a></li>
-                <li><a href="@Url.Action("Contact","Home")" class="smoothScroll">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</div><!-- End Hero -->
-
-<main id="main">
-
+            <p class="typed-items" data-typed-person="GRADUATED CENTRIQ TRAINING">BEEN A COFFEE ROASTER <span class="im"> | </span> 4 YEARS, BEEN A TEAM MANAGER AND TRAINER <span class="im"> | </span> 7 YEARS
+    }
     <!-- ======= About Section ======= -->
     <div id="about" class="paddsection">
         <!-- TODO: Resume carosel -->
@@ -43,67 +26,6 @@
             </div>
         </div>
     </div><!-- End About Section -->
-    <!-- ======= Services Section ======= -->
-    <div id="services">
-        <div class="container">
-
-            <div class="services-carousel owl-theme">
-
-                <div class="services-block">
-
-                    <i class="ion-ios-browsers-outline"></i>
-                    <span>UI/UX DESIGN</span>
-                    <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-                </div>
-
-                <div class="services-block">
-
-                    <i class="ion-ios-lightbulb-outline"></i>
-                    <span>BRAND IDENTITY</span>
-                    <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-                </div>
-
-                <div class="services-block">
-
-                    <i class="ion-ios-color-wand-outline"></i>
-                    <span>WEB DESIGN</span>
-                    <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-                </div>
-
-                <div class="services-block">
-
-                    <i class="ion-social-android-outline"></i>
-                    <span>MOBILE APPS</span>
-                    <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-                </div>
-
-                <div class="services-block">
-
-                    <i class="ion-ios-analytics-outline"></i>
-                    <span>Analytics</span>
-                    <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-                </div>
-
-                <div class="services-block">
-
-                    <i class="ion-ios-camera-outline"></i>
-                    <span>PHOTOGRAPHY</span>
-                    <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div><!-- End Services Section -->
-</main><!--End Main-->
-
 
 @section scripts {
     <script>
