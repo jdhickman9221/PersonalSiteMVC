@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+@section typed{
+    <h1 class="im">CONTACT <span class="typed"></span></h1>
+    <p class="typed-items" data-typed-person="ME.">VIA LINKED IN<span class="im"> | </span>VIA EMAIL.</p>
+}
+
+
+
+<!-- ======= Contact Section ======= -->
+<div id="contact" class="paddsection">
+    <div class="container">
+        <div class="contact-block1">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="contact-contact">
+
+                        <h2 class="mb-30">@ViewBag.Title</h2>
+                        <a href="index.html">
+                            <img src="~/Content/assets/img/JordanHickmanLogo (1).png" />
+                        </a>
+
+                        <ul class="contact-details">
+                            <li><a href="https://www.linkedin.com/in/jordan-hickman-dev/"><i class="ion-social-linkedin"></i></a><span> Linked In</span></li>
+                            <li><a href="mailto:jdhickman@outlook.com"><i class="ion-email"></i></a><span> jdhickman816@outlook.com</span></li>
+                            <li><a href="https://twitter.com/jdhickmandev"><i class="ion-social-twitter"></i></a><span> Twitter</span></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="form-group contact-block1">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="FIRST | LAST NAME" data-rule="minlen:4" data-msg="Uh-Oh Friend! I need at least 4 characters from you!" />
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="WHAT'S YOUR EMAIL?" data-rule="email" data-msg="Uh-Oh Friend! Revise your E-mail Address!" />
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Uh-Oh Friend! I need at least 8 characters from you!" />
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Don't forget to write me!" placeholder="What's on your mind?"></textarea>
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 mb-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Thank you! I'll get back to you as soon as possible!</div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- End Contact Section -->
+<!--Then Footer Then Credits-->

@@ -124,13 +124,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\apple-touch-icon.png" />
+    <Content Include="Content\assets\css\carousel.css" />
     <Content Include="Content\assets\css\portfolio.css" />
     <Content Include="Content\assets\css\resume.css" />
     <Content Include="Content\assets\css\style.css" />
+    <Content Include="Content\assets\css\venobox.css" />
+    <Content Include="Content\assets\css\venobox.min.css" />
     <Content Include="Content\assets\img\1.jpg" />
     <Content Include="Content\assets\img\2.jpg" />
     <Content Include="Content\assets\img\2020-10-06-022929975_2.png" />
@@ -145,14 +149,16 @@
     <Content Include="Content\assets\img\blog-post-2.jpg" />
     <Content Include="Content\assets\img\blog-post-3.jpg" />
     <Content Include="Content\assets\img\blog-post-big.jpg" />
+    <Content Include="Content\assets\img\CENTRIQLOGO.png" />
+    <Content Include="Content\assets\img\ColtonWeeks %281%29.png" />
+    <Content Include="Content\assets\img\CourtneyCrespo %281%29.png" />
     <Content Include="Content\assets\img\favicon-16x16.png" />
     <Content Include="Content\assets\img\favicon-32x32.png" />
     <Content Include="Content\assets\img\favicon.png" />
     <Content Include="Content\assets\img\fedonestudioone.jpg" />
     <Content Include="Content\assets\img\home-bg.jpg" />
-    <Content Include="Content\assets\img\Jordan Hickman Resume IT-1.png" />
-    <Content Include="Content\assets\img\Jordan Hickman Resume IT-2.png" />
-    <Content Include="Content\assets\img\Jordan Hickman Resume IT-3.png" />
+    <Content Include="Content\assets\img\JordanHickmanDeveloperResume-1.png" />
+    <Content Include="Content\assets\img\JordanHickmanDeveloperResume-2.png" />
     <Content Include="Content\assets\img\JordanHickmanLogo %281%29.png" />
     <Content Include="Content\assets\img\JordanHickmanLogo.png" />
     <Content Include="Content\assets\img\JordanHickmanLogo2.png" />
@@ -172,14 +178,20 @@
     <Content Include="Content\assets\img\portfolio-details-2.jpg" />
     <Content Include="Content\assets\img\portfolio-details-3.jpg" />
     <Content Include="Content\assets\img\preloader.gif" />
+    <Content Include="Content\assets\img\SarahLedford %282%29.png" />
+    <Content Include="Content\assets\img\SawyerGobin %282%29.png" />
     <Content Include="Content\assets\img\TempConvertLab.png" />
     <Content Include="Content\assets\img\WaterLab.png" />
+    <Content Include="Content\assets\img\WesleyNelson %281%29.png" />
+    <Content Include="Content\assets\js\carousel.js" />
     <Content Include="Content\assets\js\classie.js" />
     <Content Include="Content\assets\js\grid3d.js" />
     <Content Include="Content\assets\js\helper.js" />
     <Content Include="Content\assets\js\jquery.mousewheel.js" />
     <Content Include="Content\assets\js\main.js" />
     <Content Include="Content\assets\js\modernizr.custom.js" />
+    <Content Include="Content\assets\js\venobox.js" />
+    <Content Include="Content\assets\js\venobox.min.js" />
     <Content Include="Content\assets\vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Content\assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="Content\assets\vendor\bootstrap\css\bootstrap-reboot.css" />
@@ -341,6 +353,7 @@
     <Content Include="Content\assets\vendor\owl.carousel\LICENSE" />
     <Content Include="Content\assets\vendor\owl.carousel\README.md" />
     <Content Include="Content\assets\site.webmanifest" />
+    <Content Include="Content\assets\img\Jordan Hickman Developer Resume.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -363,7 +376,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Contact2.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="_Archive\vendor\bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="_Archive\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
@@ -394,10 +407,11 @@
     <Content Include="Views\Home\WaterLab.cshtml" />
     <Content Include="Views\Home\MadLib.cshtml" />
     <Content Include="Views\Home\TempConverter.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\EmailConfirmation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

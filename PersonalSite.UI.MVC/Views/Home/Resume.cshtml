@@ -3,118 +3,43 @@
     ViewBag.Title = "Resume";
 }
 @section typed{
-            <h1 class="im">I HAVE  <span class="typed"></span></h1>
-            <p class="typed-items" data-typed-person="GRADUATED CENTRIQ TRAINING">BEEN A COFFEE ROASTER <span class="im"> | </span> 4 YEARS, BEEN A TEAM MANAGER AND TRAINER <span class="im"> | </span> 7 YEARS
-    }
-    <!-- ======= About Section ======= -->
-    <div id="about" class="paddsection">
-        <!-- TODO: Resume carosel -->
-        <div class="row">
-            <div class="col-md-3 resume">
-                <a href="" target="_blank" class="btn btn-secondary" id="res1">Open Resume</a>
-            </div>
-            <div class="col-md-3 resume">
-                <a href="" target="_blank" class="btn " id="res1">Download PDF</a>
-            </div>
-        </div>
-        <div class="card-carousel">
+    <h1 class="im">I HAVE  <span class="typed"></span></h1>
+    <p class="typed-items" data-typed-person="GRADUATED CENTRIQ TRAINING">
+        BEEN A COFFEE ROASTER <span class="im"> | </span> 4 YEARS, BEEN A TEAM MANAGER AND TRAINER <span class="im"> | </span> 7 YEARS
+}
+<!-- ======= About Section ======= -->
+<div id="about" class="paddsection">
+    <!-- TODO: Resume carosel -->
 
-            <div class="my-card">
-                <img class="resumepic img-responsive thumb" src="~/Content/assets/img/Jordan Hickman Resume IT-2.png" />
-            </div>
+</div>
 
-            <div class="my-card">
 
-                <img class="resumepic img-responsive thumb" src="~/Content/assets/img/Jordan Hickman Resume IT-1.png" />
-            </div>
+<div class="whole-resume">
+    <a class="venobox" data-gall="myGallery" title="Image 1" href="~/Content/assets/img/JordanHickmanDeveloperResume-1.png">
+        <img class="resume" src="~/Content/assets/img/JordanHickmanDeveloperResume-1.png" alt="Jordan Hickman Resume Page 1" />
+    </a>
+    <a class="venobox" data-gall="myGallery" title="Image 2" href="~/Content/assets/img/JordanHickmanDeveloperResume-2.png">
+        <img class="resume" src="~/Content/assets/img/JordanHickmanDeveloperResume-2.png" alt="Jordan Hickman Resume Page 2" />
+    </a>
+</div>
+<div class="row download-resume">
+    <div class="col-md-3 resume">
+        <a href="~/Content/assets/img/Jordan Hickman Developer Resume.pdf" target="_blank" class="btn btn-secondary" id="res1">Resume</a>
+    </div>
+</div>
 
-            <div class="my-card">
-                <img class="resumepic img-responsive thumb" src="~/Content/assets/img/Jordan Hickman Resume IT-3.png" />
-            </div>
-        </div>
-    </div><!-- End About Section -->
 
 @section scripts {
     <script>
-        $num = $('.my-card').length;
+        $('.venobox').venobox({
 
-        $even = $num / 2;
-
-        $odd = ($num + 1) / 2;
-
-
-
-        if ($num % 2 == 0) {
-
-            $('.my-card:nth-child(' + $even + ')').addClass('active');
-
-            $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
-
-            $('.my-card:nth-child(' + $even + ')').next().addClass('next');
-
-        } else {
-
-            $('.my-card:nth-child(' + $odd + ')').addClass('active');
-
-            $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
-
-            $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
-
-        }
-
-
-
-        $('.my-card').click(function () {
-
-            $slide = $('.active').width();
-
-            console.log($('.active').position().left);
-
-
-
-            if ($(this).hasClass('next')) {
-
-                $('.card-carousel').stop(false, true).animate({ left: '-=' + $slide });
-
-            } else if ($(this).hasClass('prev')) {
-
-                $('.card-carousel').stop(false, true).animate({ left: '+=' + $slide });
-
-            }
-
-
-
-            $(this).removeClass('prev next');
-
-            $(this).siblings().removeClass('prev active next');
-
-
-
-            $(this).addClass('active');
-
-            $(this).prev().addClass('prev');
-
-            $(this).next().addClass('next');
+            // settings here
 
         });
 
-        // Keyboard nav
 
-        $('html body').keydown(function (e) {
-
-            if (e.keyCode == 37) {// left
-
-                $('.active').prev().trigger('click');
-
-            }
-
-            else if (e.keyCode == 39) {// right
-
-                $('.active').next().trigger('click');
-
-            }
-
-        });
     </script>
+
+
 
 }

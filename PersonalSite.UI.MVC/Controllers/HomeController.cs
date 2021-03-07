@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Net;
+using System.Net.Mail;
+using PersonalSite.UI.MVC.Models;
 
 namespace PersonalSite.UI.MVC.Controllers
 {
@@ -149,6 +152,60 @@ namespace PersonalSite.UI.MVC.Controllers
 
 
             return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Contact(ContactViewModel cvm)
+        {
+            if (!ModelState.IsValid)
+
+            {
+                return View(cvm);
+            }
+
+            if(!ModelState.IsValid)
+            {
+                return View(cvm);
+            }
+
+            string message =
+                $"You have recieved an email from {cvm.Name} with a subject of" +
+                $"{(cvm.Subject == null ? "Email from JordanHickman.com" : cvm.Subject)}. Please respond to" +
+                $"{cvm.EmailAddress} with your response to the following message: <br/><br/>" +
+                $"{cvm.Message}";
+
+            MailMessage mm = new MailMessage("admin@jordanhickman.com", "jdhickman816@outlook.com", cvm.Subject, message);
+
+            mm.IsBodyHtml = true;
+
+            mm.Priority = MailPriority.High;
+
+            mm.ReplyToList.Add(cvm.EmailAddress);
+
+            SmtpClient client = new SmtpClient("mail.jordanhickman.com");
+            client.Credentials = new NetworkCredential("admin@jordanhickman.com", "HmtU7APYMus_");
+
+            try
+            {
+                client.Send(mm);
+            
+            }
+            catch(Exception ex)
+            {
+                ViewBag.CustomerMessage = $"We're sorry your request could not be completed at this time. Please try again later. " +
+                    $"Error Message: <br/><br/>{ex.StackTrace}.";
+
+                return View(cvm);
+            }
+
+            return View("EmailConfirmation", cvm);
+
+
+
+
+
+            
         }
 
     }//end class

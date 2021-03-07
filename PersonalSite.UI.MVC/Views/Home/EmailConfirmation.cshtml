@@ -1,0 +1,55 @@
+﻿@model PersonalSite.UI.MVC.Models.ContactViewModel
+
+@{
+    ViewBag.Title = "Email Confirmation";
+}
+
+@section typed{
+    <h1 class="im">CONTACT <span class="typed"></span></h1>
+    <p class="typed-items" data-typed-person="ME.">VIA LINKED IN<span class="im"> | </span>VIA EMAIL.</p>
+}
+
+<h2>Email Confirmation</h2>
+
+<div>
+    <h4>ContactViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Message)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Message)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailAddress)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index")*@
+</p>

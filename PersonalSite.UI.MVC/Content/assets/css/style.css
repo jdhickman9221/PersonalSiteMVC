@@ -10,7 +10,12 @@
 --------------------------------------------------------------*/
 
 /*#region Jdh*/
+.form-horizontal{
+    height: 50em;
+    
+}
 div .credits a, p .credits {
+
     font-size: 4px;
 }
 
@@ -34,11 +39,7 @@ madlib {
     background-color: #ee4c7c;
 }
 
-div .resume{
-    display:flex;
-    justify-content:space-between;
-    align-content:center;
-}
+
 
 
 /*#endregion Jdh*/
@@ -182,13 +183,13 @@ p {
     }
 
 .paddsection {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 .paddsections {
-    padding-top: 90px;
-    padding-bottom: 90px !important;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 .hvr-shutter-in-horizontal::before {
@@ -277,6 +278,7 @@ nav ul li {
 
 .typed-items {
     background-color: rgba(227, 226, 223, .4);
+    padding-left: 2em;
 }
 
 #hero .hero-content {
@@ -319,11 +321,13 @@ span.typed {
 .hero-content .list-social li {
     float: left;
     margin-right: 20px;
+    padding-left: 1.5em;
 }
 
     .hero-content .list-social li i {
         color: #fff;
         font-size: 15px;
+        padding-left: 1em;
     }
 
 /*--------------------------------------------------------------
@@ -390,12 +394,15 @@ span.typed {
 /*-----------------------------------------------------------------------------------*/
 /*  About
 /*-----------------------------------------------------------------------------------*/
+
 #about {
     width: 100%;
     height: auto;
     background: #e3e2df;
     padding-top: 90px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
     #about .div-img-bg {

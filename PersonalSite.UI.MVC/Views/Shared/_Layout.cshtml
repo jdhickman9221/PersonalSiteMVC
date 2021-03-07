@@ -38,10 +38,11 @@
 
     <!-- Template Main CSS File -->
     <link href="~/Content/assets/css/style.css" rel="stylesheet">
-    <link href="~/Content/assets/css/resume.css" rel="stylesheet">
+    @*<link href="~/Content/assets/css/resume.css" rel="stylesheet">*@
     <link href="~/Content/assets/css/portfolio.css" rel="stylesheet">
-
-
+    <link href="~/Content/assets/css/venobox.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/venobox.min.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/carousel.css" rel="stylesheet" />
     <!-- =======================================================
     * Template Name: Folio - v2.2.1
     * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
@@ -58,7 +59,7 @@
             <div class="container">
 
                 <div class="logo">
-                    <a href="index.html"><img src="~/Content/assets/img/JordanHickmanLogo2.png" alt="logo"> </a>
+                    <a href="@Url.Action("Index","Home")"><img src="~/Content/assets/img/JordanHickmanLogo2.png" alt="logo"> </a>
                 </div>
 
 
@@ -91,7 +92,7 @@
                     <li><a href="@Url.Action("Index","Home")" class="smoothScroll">Home</a></li>
                     <li><a href="@Url.Action("Resume","Home")" smoothScroll">Resume</a></li>
                     <li><a href="@Url.Action("Portfolio","Home")" class="smoothScroll">Portfolio</a></li>
-                    <li><a href="@Url.Action("Classmates","Home")" class="smoothScroll">Classmates</a></li>
+                    <li><a href="@Url.Action("Classmates","Home")" class="smoothScroll">Links & Associates</a></li>
                     <li><a href="@Url.Action("Contact","Home")" class="smoothScroll">Contact</a></li>
                 </ul>
             </div>
@@ -150,8 +151,9 @@
     <script src="~/Content/assets/js/grid3d.js"></script>
     <script src="~/Content/assets/js/classie.js"></script>
     <script src="~/Content/assets/js/jquery.mousewheel.js"></script>
-
-
+    <script src="~/Content/assets/js/venobox.min.js"></script>
+    <script src="~/Content/assets/js/venobox.js"></script>
+    <script src="~/Content/assets/js/carousel.js"></script>
     @RenderSection("scripts", false)
     <script>
         //Highlight Selected navigation
