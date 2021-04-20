@@ -1,5 +1,7 @@
 ﻿
 @{
+    /**/
+
     ViewBag.Title = "TempConverter";
 }
 @section typed{
@@ -14,11 +16,13 @@
     <div class="tempContainer">
         <p class="text-center">In this form, we allow user to specify values of temperatures and how they want to convert it.</p>
         <h4 class="answer text-center">Enter a value in Fahrenheit or Celcius and select the drop down to convert to opposite temperature. </h4>
+
+
         <div class="row">
-            <div class="col-md-4">Temperature: <input type="text" name="userTemp" /></div>
+            <div class="offset-4 col-md-2">Temperature: <input type="text" name="userTemp" /></div>
 
 
-            <div class="col-md-3">
+            <div class=" col-md-2">
                 Convert to:
                 <select name="Function">
                     <option>Fahrenheit</option>
@@ -27,18 +31,21 @@
             </div>
 
 
-            <div class="col-md-1">
+
+
+            <div class="col-md-1" id="waterLab">
                 <input type="submit" name="Calculate!" class="btn btn-success" />
             </div>@*End Submit*@
 
 
-            <div class="col-md-1">
+            <div class="col-md-2" id="waterLab">
                 @Html.ActionLink("Clear", "TempConverter", "Home", null, new { @class = "btn btn-danger" })
             </div>@*End Clear*@
 
 
+
         </div>
-    </div>
+
 </form>
 @if (ViewBag.convert != null)
 {

@@ -11,11 +11,11 @@
 <h2 class="text-center">A Simple Madlib</h2>
 <form method="get">
     <div class="madlib-container">
-        <p class="text-center">In his form, we insert user answers to generate a fun MadLib.</p>
+        <p class="text-center">In this form, we insert user answers to generate a fun MadLib.</p>
         <h4 class="answer text-center">Please fill out this following form to generate your MadLib!</h4>
 
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 offset-3">
                 Country:
                 <input type="text" name="Country" />
             </div>
@@ -27,9 +27,11 @@
                 Animal:
                 <input type="text" name="Animal" />
             </div>
+        </div>
 
 
-            <div class="col-md-2">
+        <div class="row">
+            <div class="col-md-2 offset-3">
                 Verb:
                 <input type="text" name="Verb" />
             </div>
@@ -40,16 +42,20 @@
             <div class="col-md-2">
                 Liquid:
                 <input type="text" name="Liquid" />
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1 col-md-offset-3 madlib"><input type="submit" name="Generate" class="btn btn-success" /></div>@*submit button*@
-            <div class="col-md-6 col-md-offset-3 madlib">
-                @Html.ActionLink("Clear", "MadLib", "Home", null, new { @class = "btn btn-danger" })@*clear*@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class=" offset-md-5 col-md-1" id="waterLab">
+            <input type="submit" name="Generate" class="btn" />
+        </div>@*submit button*@
+
+        <div class="" id="waterLab">
+            @Html.ActionLink("Clear", "MadLib", "Home", null, new { @class = "btn" })@*clear*@
+        </div>
+    </div>
+   
 </form>
 @if (ViewBag.MadLib != null)
 {
