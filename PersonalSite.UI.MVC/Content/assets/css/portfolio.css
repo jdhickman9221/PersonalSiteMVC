@@ -174,7 +174,9 @@ figcaption {
     position: absolute;
     bottom: 0;
     overflow: hidden;
-    opacity: 0
+    opacity: 0;
+    left: 0;
+    
 }
 
     figcaption p {
@@ -189,12 +191,14 @@ figcaption {
     }
 
     figcaption span {
-        left: -100%;
-        opacity: 0
+        left:;
+        opacity: 0;
+        font-size: .75rem;
     }
 
     figcaption a {
-        color: #333
+        color: #333;
+        font-size: .75rem;
     }
 
 /*.date {
