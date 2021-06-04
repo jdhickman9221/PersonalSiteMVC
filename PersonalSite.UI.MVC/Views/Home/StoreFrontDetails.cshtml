@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Fed One Studio One";
+}
+@section typed{
+    <h1 class="im">Portfolio: <span class="typed"></span></h1>
+    <p class="typed-items" data-typed-person="">STORE FRONT E-COMMERCE<span class="im"> | </span>FULL STACK<span class="im"> | </span>HTML<span class="im"> | </span>CSS<span class="im"> | </span>JAVASCRIPT<span class="im"> | </span>JQUERY<span class="im"> | </span>ASP.NET MVC<span class="im"> | </span>ENTITY FRAMEWORK ADO.NET<span class="im"> | </span>AJAX</p>
+}
+<section class="portfolio-details">
+    <div class="container">
+
+        <div class="portfolio-details-container">
+
+            <div class="owl-carousel portfolio-details-carousel">
+                <img src="~/Content/assets/img/StoreFrontDetails1.png" class="img-fluid" alt="">
+                <img src="~/Content/assets/img/StoreFrontDetails2.png" class="img-fluid" alt="">
+                <img src="~/Content/assets/img/StoreFrontDetails3.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="portfolio-info">
+                <h3>Small Business Project Details</h3>
+                <ul>
+                    <li><strong>Category</strong>: Full Stack Design</li>
+                    <li><strong>Langauges</strong>: HTML5, CSS3, JavaScript, jQuery, AJAX,<br/> ASP.NET MVC, Entity Framework ADO.NET</li>
+                    <li><strong>Project date</strong>: March, 2021</li>
+                    <li><strong>Project URL</strong>: <a href="http://theluminarystore.jordanhickman.com/">Link to live site</a></li>
+                    <li><strong>GitHub URL</strong>: <a href="https://github.com/jdhickman9221/StoreFrontLab">Link to GitHub Repo</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="portfolio-description">
+            <h2></h2>
+            <p>
+                This is a study on an N-Tier ASP.NET MVC. Using an HTML to MVC template conversion I was able to construct a mock e-commerce site. This store front sells body jewelry. It gets it's data dynamically through domain models linked to MySQL Server through Entity Framework.<br /><span style="">Other functionalities:</span><br />- Using Identity Samples, I created anonymous, customer, staff, and administration roles. Using an external identity matrix document, I mapped the roles and placed limitations on views and CRUD functionalities respectively.<br />
+                - Working contact form linked to my domain's e-mail.<br />
+                - Using LINQ, filtered client side (for customer roles) using a grid layout on the products for sale.
+                - Session based shopping cart (must be logged in) that shows total quantity of items in cart when added, a running total of cost in currency format, and ability to remove items from cart. When session length expires cart returns to empty state. <br />
+                - Admin role has the utmost control over the creation, editing, and deleting of objects represented in the data base. This may be useful for a fully dynamic webstore as products are added and removed.
+
+            </p>
+        </div>
+    </div>
+</section>
+

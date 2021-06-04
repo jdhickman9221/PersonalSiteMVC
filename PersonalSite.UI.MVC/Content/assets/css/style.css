@@ -616,6 +616,7 @@ span.typed {
 
     .portfolio-details .portfolio-details-container {
         position: relative;
+        width: 1080px;
     }
 
     .portfolio-details .portfolio-details-carousel {
@@ -634,11 +635,11 @@ span.typed {
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background-color: #ddd !important;
+            background-color: #ddd;
         }
 
             .portfolio-details .portfolio-details-carousel .owl-dot.active {
-                background-color: #b8a07e !important;
+                background-color: #ee4c7c !important;
             }
 
     .portfolio-details .portfolio-info {

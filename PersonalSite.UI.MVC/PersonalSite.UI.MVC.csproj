@@ -132,6 +132,13 @@
     <Content Include="Content\assets\css\carousel.css" />
     <Content Include="Content\assets\css\portfolio.css" />
     <Content Include="Content\assets\css\resume.css" />
+    <Content Include="Content\assets\img\sithuniversity1.PNG" />
+    <Content Include="Content\assets\img\sithuniversity2.PNG" />
+    <Content Include="Content\assets\img\sithuniversity3.PNG" />
+    <Content Include="Content\assets\img\sithuniversity4.PNG" />
+    <Content Include="Content\assets\img\StoreFrontDetails1.PNG" />
+    <Content Include="Content\assets\img\StoreFrontDetails2.PNG" />
+    <Content Include="Content\assets\img\StoreFrontDetails3.PNG" />
     <Content Include="Content\assets\css\style.css" />
     <Content Include="Content\assets\css\venobox.css" />
     <Content Include="Content\assets\css\venobox.min.css" />
@@ -155,6 +162,9 @@
     <Content Include="Content\assets\img\favicon-16x16.png" />
     <Content Include="Content\assets\img\favicon-32x32.png" />
     <Content Include="Content\assets\img\favicon.png" />
+    <Content Include="Content\assets\img\FedOneDetails1.PNG" />
+    <Content Include="Content\assets\img\FedOneDetails2.PNG" />
+    <Content Include="Content\assets\img\FedOneDetails3.PNG" />
     <Content Include="Content\assets\img\fedonestudioone.jpg" />
     <Content Include="Content\assets\img\home-bg.jpg" />
     <Content Include="Content\assets\img\JordanHickmanDeveloperResume-1.png" />
@@ -355,6 +365,7 @@
     <Content Include="Content\assets\vendor\owl.carousel\README.md" />
     <Content Include="Content\assets\site.webmanifest" />
     <Content Include="Content\assets\img\Jordan Hickman Developer Resume.pdf" />
+    <Content Include="Content\assets\img\SithAcademyDocumentation.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -402,7 +413,7 @@
     <Content Include="Views\Shared\_OriginalLayout.cshtml" />
     <Content Include="Views\Home\Resume.cshtml" />
     <Content Include="Views\Home\Classmates.cshtml" />
-    <Content Include="Views\Home\PortfolioDescription.cshtml" />
+    <Content Include="Views\Home\SmallBusinessProjectDetails.cshtml" />
     <Content Include="Views\Home\Portfolio.cshtml" />
     <Content Include="Views\Home\SimpleCalculator.cshtml" />
     <Content Include="Views\Home\WaterLab.cshtml" />
@@ -410,6 +421,8 @@
     <Content Include="Views\Home\TempConverter.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\EmailConfirmation.cshtml" />
+    <Content Include="Views\Home\StoreFrontDetails.cshtml" />
+    <Content Include="Views\Home\PairedProgrammingDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

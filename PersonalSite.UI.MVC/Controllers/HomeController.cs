@@ -42,7 +42,25 @@ namespace PersonalSite.UI.MVC.Controllers
 
             return View();
         }
+        public ActionResult SmallBusinessProjectDetails()
+        {
+
+
+            return View();
+        }
+        public ActionResult StoreFrontDetails()
+        {
+
+
+            return View();
+        }
         public ActionResult PortfolioDescription()
+        {
+
+
+            return View();
+        }
+        public ActionResult PairedProgrammingDetails()
         {
 
 

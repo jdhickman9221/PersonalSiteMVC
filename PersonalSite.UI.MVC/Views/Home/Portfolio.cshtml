@@ -4,7 +4,7 @@
 }
 @section typed{
     <h1 class="im">Portfolio <span class="typed"></span></h1>
-    <p class="typed-items" data-typed-person="">PROJECT 1<span class="im"> | </span>PROJECT 2<span class="im"> | </span>PROJECT<span class="im"> | </span>PROJECT 4<span class="im"> | </span>PROJECT 5<span class="im"> | </span>PROJECT 6<span class="im"> | </span>PROJECT 7</p>
+    <p class="typed-items" data-typed-person="">SMALL BUSINESS PROJECT<span class="im"> | </span>STORE FRONT E-COMMERCE<span class="im"> | </span>WATER WEIGHT CONVERSION<span class="im"> | </span>MAD LIB<span class="im"> | </span>TEMPERATURE CONVERSION</p>
 }
 <div class="portfolio">
     <ul class="portfolio-items">
@@ -14,7 +14,7 @@
                     <img src="~/Content/assets/img/fedonestudioone.jpg" alt="Small Business Project" />
                 </div>
                 <figcaption>
-                    <p><span><a href="http://ibrewlab.jordanhickman.com/index.html">Small Business Project</a></span></p>
+                    <p><span><a href="@Url.Action("SmallBusinessProjectDetails","Home")">Small Business Project</a></span></p>
                     <p><span>Custom CSS and HTML strictly.</span></p>
                 </figcaption>
             </figure>
@@ -23,11 +23,23 @@
         <li class="item">
             <figure>
                 <div class="view">
-                    <img src="~/Content/assets/img/storefront.png" alt="Store Front E-Commerce Project"/>
+                    <img src="~/Content/assets/img/storefront.png" alt="Store Front E-Commerce Project" />
                 </div>
                 <figcaption>
-                    <p><span><a href="http://theluminarystore.jordanhickman.com">Store Front E-Commerce Project</a></span></p>
-                    <p><span>An n-tier web app using Entiry Framework.</span></p>
+                    <p><span><a href="@Url.Action("StoreFrontDetails","Home")">Store Front E-Commerce Project</a></span></p>
+                    <p><span>Full Stack app ASP.NET MVC.</span></p>
+                </figcaption>
+            </figure>
+        </li>
+
+        <li class="item">
+            <figure>
+                <div class="view">
+                    <img src="~/Content/assets/img/sithuniversity4.png" alt="Paired Programming Project" />
+                </div>
+                <figcaption>
+                    <p><span><a href="@Url.Action("PairedProgrammingDetails","Home")">Paired Programming (Agile and Scrum)</a></span></p>
+                    <p><span>Full Stack app ASP.NET MVC.</span></p>
                 </figcaption>
             </figure>
         </li>
@@ -129,8 +141,8 @@
             </div>
 
             <div class="services-block">
-
-                <i class="ion-ios-color-wand-outline"></i>
+                <i style=""><ion-icon name="logo-github"></ion-icon></i>
+                @*<i class="ion-ios-color-wand-outline"></i>*@
                 <span>GIT HUB</span>
                 <p class="separator">Backing up work and pushing to repositories. </p>
 
